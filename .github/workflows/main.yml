@@ -19,7 +19,7 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Docker Build
       run: |
-        docker build -t Edge-runtime-test-module .
+        docker build -t edge-runtime-test-module .
   
     #This Action Emits 2 Variables, IMAGE_SHA_NAME and IMAGE_URL 
     #which you can reference in subsequent steps
@@ -27,6 +27,6 @@ jobs:
       uses: machine-learning-apps/gpr-docker-publish@master
       id: docker
       with:
-        IMAGE_NAME: 'Edge-runtime-test-module'
+        IMAGE_NAME: 'edge-runtime-test-module'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
