@@ -8,7 +8,7 @@
           "settings": {
             "minDockerVersion": "v1.25",
             "loggingOptions": "",
-            "registryCredentials": {}
+            "registryCredentials":{}
           }
         },
         "systemModules": {
@@ -36,7 +36,7 @@
             "status": "running",
             "restartPolicy": "always",
             "settings": {
-              "image": "docker.pkg.github.com/northropbv/edge-runtime-test-module/edge-runtime-test-module:latest",
+              "image": "ghcr.io/northropbv/edge-runtime-test-module:latest",
               "createOptions": "{}"
             }
           },
