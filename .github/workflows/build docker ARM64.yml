@@ -2,7 +2,7 @@
 # Docker container build action.
 ###########################################################
 
-name: Docker Build Smarte Edge monitor module
+name: Build Docker ARM64
 
 on: [push]
 
