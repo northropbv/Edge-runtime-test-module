@@ -22,7 +22,7 @@ jobs:
       uses: crazy-max/ghaction-docker-buildx@v1
       with:
         version: latest
-    - name: docker build data collector monitor module
+    - name: docker build data module
       run: |
         docker buildx build --push \
             --tag ghcr.io/northropbv/edge-runtime-test-module:amd01 \
