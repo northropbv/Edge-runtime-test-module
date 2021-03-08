@@ -22,8 +22,8 @@ jobs:
       uses: crazy-max/ghaction-docker-buildx@v1
       with:
         version: latest
-    - name: docker build data module
+    - name: docker build module
       run: |
         docker buildx build --push \
-            --tag ghcr.io/northropbv/edge-runtime-test-module:v01 \
-            --platform linux/amd64
+            --tag ghcr.io/northropbv/edge-runtime-test-module:01 \
+            --platform linux/amd64,linux/arm64 .
