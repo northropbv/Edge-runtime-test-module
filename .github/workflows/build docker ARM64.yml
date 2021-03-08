@@ -25,5 +25,5 @@ jobs:
     - name: docker build module
       run: |
         docker buildx build --push \
-            --tag ghcr.io/northropbv/edge-runtime-test-module:01 \
+            --tag ghcr.io/northropbv/edge-runtime-test-module-ARM64:01 \
             --platform linux/arm64 .
