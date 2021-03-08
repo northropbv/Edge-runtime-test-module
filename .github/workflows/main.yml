@@ -26,4 +26,4 @@ jobs:
       run: |
         docker buildx build --push \
             --tag ghcr.io/northropbv/edge-runtime-test-module:v01 \
-            --platform linux/amd64,linux/arm64
+            --platform linux/amd64
